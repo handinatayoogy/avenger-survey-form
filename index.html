@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avenger Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="title">The Avenger Survey Form</h1>
+      <p id="description">Terima kasih telah mengisi survei di bawah...</p>
+
+      <form action="" id="survey-form">
+        <div class="form-grup">
+          <label for="name" id="name-label">Nama</label>
+          <input type="text" name="name" id="name" required placeholder="Isi nama kamu" class="form-control" />
+        </div>
+        <div class="form-grup">
+          <label for="email" id="email-label">Email</label>
+          <input type="email" name="email" id="email" required placeholder="Isi email kamu" class="form-control" />
+        </div>
+        <div class="form-grup">
+          <label for="number" id="number-label">Umur</label>
+          <input type="number" name="number" id="number" required placeholder="Umur" class="form-control" min="15" max="70" />
+        </div>
+        <div class="form-grup">
+          <p>Apa pekerjaan kamu?</p>
+          <select name="role" id="dropdown" class="form-control" required>
+            <option disabled selected value>Pilih</option>
+            <option value="siswa">Siswa</option>
+            <option value="mahasiswa">Mahasiswa</option>
+            <option value="pns">PNS</option>
+            <option value="freelancer">Freelancer</option>
+            <option value="wiraswasta">Wiraswasta</option>
+            <option value="lainnya">Lainnya</option>
+          </select>
+        </div>
+        <div class="form-grup">
+          <p>Apakah kamu suka film The Avenger?</p>
+          <label for="" class="tombol"> <input type="radio" name="kesukaan" value="suka" />Suka </label>
+          <label for="" class="tombol"> <input type="radio" name="kesukaan" value="biasa" />Biasa Aja </label>
+          <label for="" class="tombol"> <input type="radio" name="kesukaan" value="tidak" />Tidak </label>
+        </div>
+        <div class="form-grup favorit">
+          <p>Siapa Super Hero Favoritmu di The Avenger?</p>
+          <label for="" class="input-checkbox"> <input type="checkbox" name="hero-fav" value="captain-america" />Captain America </label>
+          <label for="" class="input-checkbox"> <input type="checkbox" name="hero-fav" value="iron-man" />Iron Man </label>
+          <label for="" class="input-checkbox"> <input type="checkbox" name="hero-fav" value="hulk" />Hulk </label>
+          <label for="" class="input-checkbox"> <input type="checkbox" name="hero-fav" value="black-widow" />Black Widow </label>
+          <label for="" class="input-checkbox"> <input type="checkbox" name="hero-fav" value="thor" />Thor </label>
+          <label for="" class="input-checkbox"> <input type="checkbox" name="hero-fav" value="hawkeye" />Hawkeye </label>
+        </div>
+        <div class="form-grup">
+          <p>Ada masukan atau komentar lain?</p>
+          <textarea name="comment" id="comments" placeholder="Masukan pesan disini..."></textarea>
+        </div>
+        <div class="form-grup">
+          <button name="submit" id="submit">Kirim</button>
+        </div>
+      </form>
+    </main>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
